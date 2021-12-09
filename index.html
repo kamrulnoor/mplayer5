@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Music Player Animation</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+<div class="" style="background-color:inherit;margin:auto; width:30%;">
+
+
+    <audio style=" width: 100%;margin: 0 auto; text-align: center;" src="akib.mp3" autoplay="true" controls>
+
+    </audio>
+    </div>
+    <div class="hero">
+      <h1>🄼 🄿🄻🄰🅈🄴🅁</h1>
+      <p></p>
+      <div class="action"><i class="material-icons">♬</i></button></div>
+    </div>
+    <div class="music">
+      <div class="vol1"></div>
+      <div class="vol2"></div>
+      <div class="vol3"></div>
+      <div class="vol4"></div>
+      <div class="vol5"></div>
+      <div class="vol6"></div>
+      <div class="vol7"></div>
+      <div class="volbrk"></div>
+      <div class="vol7"></div>
+      <div class="vol6"></div>
+      <div class="vol5"></div>
+      <div class="vol4"></div>
+      <div class="vol3"></div>
+      <div class="vol2"></div>
+      <div class="vol1"></div>
+    </div>
+    
+
+    <script type="text/javascript">
+      $(".action").on("click", function () {
+  $("html")
+    .find(".vol1, .vol2, .vol3, .vol4, .vol5, .vol6, .vol7")
+    .toggleClass("is-paused");
+});
+
+    </script>
+  </body>
+</html>

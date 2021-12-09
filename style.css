@@ -1,0 +1,444 @@
+body {
+  background: #021514;
+  font-family: helvetica;
+}
+
+p {
+  font-weight: 100;
+  color: #bdb0b0;
+  padding: 10px 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #d3191c;
+  opacity: 0.7;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.action:hover {
+  opacity: 1;
+}
+
+i.material-icons {
+  font-size: 41px;
+  color: white;
+}
+
+.music {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  margin-top: -100vh;
+  z-index: -1;
+}
+
+.vol1 {
+  width: 5%;
+  height: 70vh;
+  background-color: #d3191c;
+  align-self: flex-end;
+  -webkit-animation-name: volup1;
+          animation-name: volup1;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+}
+.vol1.is-paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes volup1 {
+  0% {
+    height: 80vh;
+    opacity: 0.8;
+  }
+  50% {
+    height: 0vh;
+    opacity: 0;
+  }
+  100% {
+    height: 100vh;
+    opacity: 1;
+  }
+}
+
+@keyframes volup1 {
+  0% {
+    height: 80vh;
+    opacity: 0.8;
+  }
+  50% {
+    height: 0vh;
+    opacity: 0;
+  }
+  100% {
+    height: 100vh;
+    opacity: 1;
+  }
+}
+.vol2 {
+  width: 5%;
+  height: 70vh;
+  background-color: #d3191c;
+  align-self: flex-end;
+  -webkit-animation-name: volup2;
+          animation-name: volup2;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+}
+.vol2.is-paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes volup2 {
+  0% {
+    height: 95vh;
+    opacity: 0.95;
+  }
+  40% {
+    height: 10vh;
+    opacity: 0.1;
+  }
+  100% {
+    height: 60vh;
+    opacity: 0.6;
+  }
+}
+
+@keyframes volup2 {
+  0% {
+    height: 95vh;
+    opacity: 0.95;
+  }
+  40% {
+    height: 10vh;
+    opacity: 0.1;
+  }
+  100% {
+    height: 60vh;
+    opacity: 0.6;
+  }
+}
+.vol3 {
+  width: 5%;
+  height: 70vh;
+  background-color: #d3191c;
+  align-self: flex-end;
+  -webkit-animation-name: volup3;
+          animation-name: volup3;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+}
+.vol3.is-paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes volup3 {
+  0% {
+    height: 60vh;
+    opacity: 0.6;
+  }
+  60% {
+    height: 5vh;
+    opacity: 0.05;
+  }
+  100% {
+    height: 60vh;
+    opacity: 0.6;
+  }
+}
+
+@keyframes volup3 {
+  0% {
+    height: 60vh;
+    opacity: 0.6;
+  }
+  60% {
+    height: 5vh;
+    opacity: 0.05;
+  }
+  100% {
+    height: 60vh;
+    opacity: 0.6;
+  }
+}
+.vol4 {
+  width: 5%;
+  height: 70vh;
+  background-color: #d3191c;
+  align-self: flex-end;
+  -webkit-animation-name: volup4;
+          animation-name: volup4;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+}
+.vol4.is-paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes volup4 {
+  0% {
+    height: 50vh;
+    opacity: 0.5;
+  }
+  60% {
+    height: 5vh;
+    opacity: 0.05;
+  }
+  100% {
+    height: 40vh;
+    opacity: 0.4;
+  }
+}
+
+@keyframes volup4 {
+  0% {
+    height: 50vh;
+    opacity: 0.5;
+  }
+  60% {
+    height: 5vh;
+    opacity: 0.05;
+  }
+  100% {
+    height: 40vh;
+    opacity: 0.4;
+  }
+}
+.vol5 {
+  width: 5%;
+  height: 70vh;
+  background-color: #d3191c;
+  align-self: flex-end;
+  -webkit-animation-name: volup5;
+          animation-name: volup5;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+}
+.vol5.is-paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes volup5 {
+  0% {
+    height: 70vh;
+    opacity: 0.7;
+  }
+  40% {
+    height: 3vh;
+    opacity: 0.3;
+  }
+  100% {
+    height: 50vh;
+    opacity: 0.5;
+  }
+}
+
+@keyframes volup5 {
+  0% {
+    height: 70vh;
+    opacity: 0.7;
+  }
+  40% {
+    height: 3vh;
+    opacity: 0.3;
+  }
+  100% {
+    height: 50vh;
+    opacity: 0.5;
+  }
+}
+.vol6 {
+  width: 5%;
+  height: 70vh;
+  background-color: #d3191c;
+  align-self: flex-end;
+  -webkit-animation-name: volup6;
+          animation-name: volup6;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+}
+.vol6.is-paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes volup6 {
+  0% {
+    height: 35vh;
+    opacity: 0.35;
+  }
+  60% {
+    height: 0vh;
+    opacity: 0;
+  }
+  100% {
+    height: 30vh;
+    opacity: 0.3;
+  }
+}
+
+@keyframes volup6 {
+  0% {
+    height: 35vh;
+    opacity: 0.35;
+  }
+  60% {
+    height: 0vh;
+    opacity: 0;
+  }
+  100% {
+    height: 30vh;
+    opacity: 0.3;
+  }
+}
+.vol7 {
+  width: 5%;
+  height: 70vh;
+  background-color: #d3191c;
+  align-self: flex-end;
+  -webkit-animation-name: volup7;
+          animation-name: volup7;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+}
+.vol7.is-paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes volup7 {
+  0% {
+    height: 20vh;
+    opacity: 0.2;
+  }
+  40% {
+    height: 1vh;
+    opacity: 0.01;
+  }
+  100% {
+    height: 15vh;
+    opacity: 0.15;
+  }
+}
+
+@keyframes volup7 {
+  0% {
+    height: 20vh;
+    opacity: 0.2;
+  }
+  40% {
+    height: 1vh;
+    opacity: 0.01;
+  }
+  100% {
+    height: 15vh;
+    opacity: 0.15;
+  }
+}
+.volbrk {
+  width: 30%;
+}
+
+.main {
+  padding: 20px;
+}
